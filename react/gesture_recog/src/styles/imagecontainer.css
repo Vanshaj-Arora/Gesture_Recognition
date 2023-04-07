@@ -1,0 +1,10 @@
+.image_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container img {
+  height: 50%;
+  clip: rect(0px, 300px, 150px, 0px);
+}
