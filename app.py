@@ -105,4 +105,4 @@ def get_recognized_word():
     recognized_word = "".join(word)
     return jsonify({'recognized_word': recognized_word})
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',port=81)
+    app.run(debug=True,host='0.0.0.0',port=81,threaded=True)
