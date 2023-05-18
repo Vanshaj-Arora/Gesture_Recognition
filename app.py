@@ -75,8 +75,8 @@ def gen_frames():
             yield (b'--frame\r\n'
                     b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
 
-@app.route('https://gesture-recognition-rwfv.onrender.com/', defaults={'path': ''})
-@app.route('https://gesture-recognition-rwfv.onrender.com/<path:path>')
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
 def catch_all(path):
     if path == '':
         return app.send_static_file('index.html')
@@ -86,10 +86,10 @@ def catch_all(path):
 def page_not_found(e):
     return redirect(url_for('catch_all'))
 
-@app.route('https://gesture-recognition-rwfv.onrender.com/video_feed')
+@app.route('/video_feed')
 def video_feed():
     return Response(gen_frames(), mimetype='multipart/x-mixed-replace; boundary=frame')
-@app.route('https://gesture-recognition-rwfv.onrender.com/backspace', methods=['POST'])
+@app.route('/backspace', methods=['POST'])
 def backspace():
     print('recieved')
     global word
@@ -99,10 +99,10 @@ def backspace():
     recognized_word = word
     return jsonify({'recognized_word': recognized_word})
 
-@app.route('https://gesture-recognition-rwfv.onrender.com/recognized_word', methods=['GET'])
+@app.route('/recognized_word', methods=['GET'])
 def get_recognized_word():
     global word, recognized_word
     recognized_word = "".join(word)
     return jsonify({'recognized_word': recognized_word})
 if __name__ == '__main__':
-    app.run(debug=True,host='0.0.0.0',port=81,threaded=True)
+    app.run(debug=True,host='0.0.0.0',port=80,threaded=True)
