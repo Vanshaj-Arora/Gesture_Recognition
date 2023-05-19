@@ -27,7 +27,7 @@ detector = HandTrackerNMS(
 
 gesture_clf = joblib.load(r'./models/gesture_clf.pkl')
 
-capture = cv2.VideoCapture(0)
+capture = cv2.VideoCapture(-1)
 word = []
 letter = None
 staticGesture = 0
