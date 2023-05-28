@@ -8,7 +8,7 @@ function Recognisedword() {
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      axios.get('http://localhost:5000/recognized_word')
+      axios.get('https://gesture-recognition-rwfv.onrender.com/recognized_word')
         .then(response => {
           const newRecognizedWord = response.data.recognized_word;
           setRecognizedWord(newRecognizedWord);
@@ -21,7 +21,7 @@ function Recognisedword() {
     const handleKeyDown = (event) => {
       event.preventDefault();
       if (event.key === 'Backspace') {
-        axios.post('http://localhost:5000/backspace')
+        axios.post('https://gesture-recognition-rwfv.onrender.com/backspace')
           .then(response => {
             const newRecognizedWord = response.data.recognized_word;
             setRecognizedWord(newRecognizedWord);
