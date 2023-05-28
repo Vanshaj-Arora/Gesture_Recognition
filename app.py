@@ -48,8 +48,10 @@ def gen_frames():
     while True:
         success, frame = capture.read()
         if not success:
+            print('i happen not success')
             break
         else:
+            print('i happen  success')
             image = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             points, bboxes, joints = detector(image)
             if points is not None:
