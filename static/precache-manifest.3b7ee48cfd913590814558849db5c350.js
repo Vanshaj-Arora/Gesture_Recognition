@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "79eb1c2d6b8cd7304c29",
+    "revision": "75e7467178fd47de438f",
     "url": "./static/css/main.4d4e64d6.chunk.css"
   },
   {
-    "revision": "79eb1c2d6b8cd7304c29",
-    "url": "./static/js/main.79eb1c2d.chunk.js"
+    "revision": "75e7467178fd47de438f",
+    "url": "./static/js/main.75e74671.chunk.js"
   },
   {
     "revision": "65c931846da4b2a61e76",
@@ -24,12 +24,12 @@ self.__precacheManifest = [
     "url": "./static/media/gesture_recog_logo.d31fa5c2.jpg"
   },
   {
-    "revision": "ced611daf7709cc778da928fec876475",
-    "url": "./static/media/slick.ced611da.eot"
-  },
-  {
     "revision": "d41f55a78e6f49a5512878df1737e58a",
     "url": "./static/media/slick.d41f55a7.ttf"
+  },
+  {
+    "revision": "ced611daf7709cc778da928fec876475",
+    "url": "./static/media/slick.ced611da.eot"
   },
   {
     "revision": "f97e3bbf73254b0112091d0192f17aec",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "./static/media/slick.b7c9e1e4.woff"
   },
   {
-    "revision": "1f301046006acbf2d856e5d30bc63bce",
+    "revision": "d0ea5f4d94b6ee26fcdd34d1d84b2289",
     "url": "./index.html"
   }
 ];
