@@ -26,8 +26,16 @@ detector = HandTrackerNMS(
 )
 
 gesture_clf = joblib.load(r'./models/gesture_clf.pkl')
+def get_camera_index():
+    for i in range(10):
+        capture = cv2.VideoCapture(i)
+        if capture.isOpened():
+            print(f"Camera index {i} is available")
+            capture.release()
+            return i
+    return -1
 
-capture = cv2.VideoCapture(-1)
+capture = cv2.VideoCapture(get_camera_index())
 word = []
 letter = None
 staticGesture = 0
