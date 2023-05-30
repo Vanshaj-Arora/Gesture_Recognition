@@ -6,10 +6,11 @@ This project utilizes hand tracking techniques to track and detect the user's ha
 
 Features
 
--> Real-time hand tracking and detection.
--> Gesture recognition based on hand movements
--> Display of recognized gestures
--> Web-based interface for easy interaction
+-> Real-time hand tracking and detection.  
+-> Gesture recognition based on hand movements. 
+-> Display of recognized gestures. 
+-> Web-based interface for easy interaction. 
+
 
 Technologies Used
 
