@@ -32,5 +32,5 @@ By overcoming these challenges, I was able to develop a comprehensive understand
 
 Acknowledgments
 
--> The hand tracking functionality in this project is based on the work of the MediaPipe library.
--> The pre-trained models used in this project are derived from various open-source projects and research works.
+-> The hand tracking functionality in this project is based on the work of the MediaPipe library.   
+-> The pre-trained models used in this project are derived from various open-source projects and research works.   
