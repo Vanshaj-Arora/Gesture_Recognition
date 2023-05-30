@@ -14,11 +14,11 @@ Features
 
 Technologies Used
 
--> Python: The core programming language used for the project.
--> Flask: A lightweight web framework used for creating the web-based interface.
--> OpenCV: A computer vision library used for image and video processing.
--> HTML/CSS/JavaScript: Front-end technologies used for creating the user interface.
--> MediaPipe: A cross-platform framework for building multimodal applied ML pipelines, used for hand tracking and gesture recognition.
+-> Python: The core programming language used for the project.   
+-> Flask: A lightweight web framework used for creating the web-based interface.   
+-> OpenCV: A computer vision library used for image and video processing.   
+-> HTML/CSS/JavaScript: Front-end technologies used for creating the user interface.   
+-> MediaPipe: A cross-platform framework for building multimodal applied ML pipelines, used for hand tracking and gesture recognition.   
 
 Project Development
 
